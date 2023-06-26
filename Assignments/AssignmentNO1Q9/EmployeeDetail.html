@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EmployeeDetails</title>
+</head>
+<body>
+    <div>
+        
+        <table align="center" border="2px" cellspacing="1px" cellpadding="4px" style="color: black;">
+            <thead><h2 align="center">Employee Details</h2></thead>     
+            <tbody>
+            
+            <tr>
+                <td>1)</td>
+                <td>Employee Id:</td>
+                <td> <input type="text" name="emp" id="eid" placeholder="Please enter emp Id"></td>
+            </tr>
+            <tr>
+                <td>2)</td>
+                <td>Employee Name:</td>
+                <td> <input type="text" name="emp" id="ename" placeholder="Please enter emp name"></td>
+            </tr>
+            <tr>
+                <td>3)</td>
+                <td>Department Name:</td>
+               <td> <select name="dname" id="dname">
+                    <option value="S/W">S/W</option>
+                    <option value="HELTH/CARE">HELTH/CARE</option>
+                    <option value="HR DEPT">HR DEPT</option>
+                </select>
+            </td>
+            </tr>
+            <tr>
+                <td>4)</td>
+                <td>Gender:</td>
+                <td><input type="radio" name="gender" id="male" value="male">Male
+                    <input type="radio" name="gender" id="female" value="female">Female
+                </td>
+            </tr>
+            <tr>
+                <td>5)</td>
+                <td>Address:</td>
+                <td>
+                    <textarea name="textarea" id="tarea" cols="20" rows="4"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>6)</td>
+                <td>Skill Topic:</td>
+                <td>
+                    <input type="checkbox" name="cbox" id="cbox" value="c">C
+                    <input type="checkbox" name="cbox" id="cbox" value="cplus">C++
+                    <input type="checkbox" name="cbox" id="cbox" value="Java">Java <br>
+                    <input type="checkbox" name="cbox" id="cbox" value="dotnet">.NET
+                </td>
+            </tr>
+            <tr>
+                <td>7)</td>
+                <td>E-mail:</td>
+                <td><input type="text" name="emailname" id="emailname"></td>
+            </tr>
+            <tr>
+                <td>8)</td>
+                <td>Birth Date:</td>
+                <td>
+                    <input type="text" name="dd" id="dd">(DD/)  <input type="text" name="mm" id="mm">(MM/) <br><input type="text" name="yy" id="yy">(YYYY) 
+
+                </td>
+            </tr>
+        </tbody>
+        </table>
+    </div>
+</body>
+</html>

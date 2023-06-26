@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTERNET USAGE SURVEY</title>
+    <style>
+        .test   {
+            border: 2px solid black;
+            width: 80%;
+
+        }
+    </style>
+</head>
+
+<body class="test" >
+    <div>
+        <form method="post" >
+
+
+            <div>
+                <h1>Internet Usage Survey</h1>
+            </div>
+            <div>
+                <p>This is being conducted to help identify the Internet usage patterns of our coustomers.
+                    <br>Please take a few moments to complete and submit this short form Thank you for your
+                    cooperation
+                </p>
+            </div>
+            <div style="display: flex;">
+                <div>
+                    <p>
+                        What type of Internet connection do you have? <br>
+                        (Select One)
+                    </p>
+                </div>
+
+                <div style="margin-left: 200px;">
+                    <label for="datalist">
+                        <select style="width: 2; height:4;" name="sel" id="sel" size="4">
+
+                            <option value="dialup">Dial-up</option>
+                            <option value="dsl">DSL</option>
+                            <option value="hsc">High Speed Cable</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </label>
+                </div>
+            </div>
+
+    </div>
+    <div style="display: flex;">
+        <div>
+            <p>
+                What type of computer do you use most at home?
+            </p>
+        </div>
+        <div style="margin-left: 180px; margin-top: 20px;">
+            <input type="radio" name="operation" id="desktop">Desktop
+            <input type="radio" name="operation" id="laptop">Laptop
+        </div>
+    </div>
+
+    <div style="display: flex;">
+        <div>
+            <p>
+                How would you describe your main reason for using the Internet?
+            </p>
+        </div>
+
+        <div style="margin-left: 78px; margin-top: 5px;">
+            <input type="radio" name="todo" id="work">To do work-related activities <br>
+            <input type="radio" name="todo" id="school">To do school-related activites <br>
+            <input type="radio" name="todo" id="entertainmaint">For entertainment purpose <br>
+            <input type="radio" name="todo" id="other">Other activities
+
+        </div>
+    </div>
+    <div style="display: flex;">
+        <div style="margin-top: 20px;">
+            <fieldset>
+                <legend>Types of sites visited</legend>
+                <p>What types of web sites do you access most often? <br>
+                    Check all that apply.
+                </p>
+                <input type="checkbox" name="check" id="self">Self Improvement <br>
+                <input type="checkbox" name="check" id="entertainmaint">Entertainment <br>
+                <input type="checkbox" name="check" id="self">News and Sports <br>
+                <input type="checkbox" name="check" id="ref">Refrence <br>
+                <input type="checkbox" name="check" id="email">Email<br>
+
+
+            </fieldset>
+        </div>
+        <div style="margin-left: 140px;margin-top: 20px;">
+            <fieldset style="height: 183px;">
+                <legend>Time spent using Internet</legend>
+                <p>During an average week how long do you spend online?
+                </p>
+                <input type="radio" name="weektime" id="zerotothree">0-3 Hours <br>
+                <input type="radio" name="weektime" id="fourtosix">4-6 Hours <br>
+                <input type="radio" name="weektime" id="seventoten">7-10 Hours <br>
+                <input type="radio" name="weektime" id="eleventoforteen">11-14 Hours <br>
+                <input type="radio" name="weektime" id="fifteenplus">15+ Hours
+
+
+            </fieldset>
+        </div>
+    </div>
+    <div>
+        <p><label for="textarea">Please comment on your options concerning Internet privacy and sefty.</label>
+        </p>
+        <textarea name="form" id="comment" cols="120" rows="7"></textarea>
+    </div>
+
+    <div style="display: flex; margin-top: 30px;">
+        <div>
+            <label>First Name:</label>
+            <input type="text" name="fname" id="fname" size="50">
+
+        </div>
+        <div style="margin-left: 45px;">
+            <label>Last Name:</label>
+            <input type="text" name="lname" id="lname" size="50">
+        </div>
+    </div>
+
+
+    <div style="display: flex; margin-top: 30px;">
+        <div>
+            <label>Age:</label>
+            <input type="text" name="age" id="age" size="8">
+        </div>
+        <div style="margin-left: 382px;">
+            <label>Zip Code:</label>
+            <input type="text" name="zip" id="zip" size="15">
+        </div>
+    </div>
+
+    <div style="display: flex; margin-top: 10px; text-align: center;">
+        <div style="margin-left: 400px;">
+            <input type="submit" name="sub" id="sub" value="Click to Submit">
+        </div>
+        <div style="margin-left: 20px;">
+            <input type="button" name="btn" id="btn" value="Clear Form">
+        </div>
+
+
+    </div>
+
+
+    </form>
+    </div>
+</body>
+
+</html>

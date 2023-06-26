@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FormValidation</title>
+
+    <script>
+        var firstname=document.getElementById("firstname").value;
+        var lastname=document.getElementById("lastname"),value;
+        var mbno=document.getElementById("mobilenumber").value;
+
+        function validateuname(){
+            var uname=document.getElementById("firstname").value;
+            
+            if(uname.trim().length<3){
+                document.getElementById("firstnameerror").innerHTML="first name cannot be only spaces"
+                return false;
+            }
+            // document.getElementById("firstnameerror").innerHTML="";
+            // return true;
+        }
+        function validatedata(){
+            var flag=validateuname();
+            var flag1=checkpasswd();
+            return flag && flag1;
+             
+        }
+
+
+        
+    </script>
+
+</head>
+<body style="background-color: cornflowerblue;">
+    <div  style="align-items: center; text-align: center; margin: 0px; margin-top: 250px;">
+        <form onsubmit="return validatedata()"  style="border: 1px solid black; background-color: blanchedalmond; justify-content: center;align-items: center; margin-top: 100px;">
+
+            <input type="text" name="fname" id="firstname" placeholder= "Firstname"><span id="firstnameerror"></span> <br> <br>
+            
+            <input type="text" name="lname" id="lastname" placeholder="Lastname"><span id="lastnameerror"></span> <br> <br>
+            
+            <input type="number" name="mbno" id="mobilenumber" placeholder="MobileNo">  <span id="mobilenoerror"></span> <br> <br>
+           
+            <input type="text" name="passwd" id="password" placeholder="Password" ><br> <br>
+            <input type="text" name="passwd" id="cpassword" placeholder="Confirm Password" > <br> <br>
+            <button id="submit" style="background-color: gold;">SUBMIT</button>
+        </form>
+    </div>
+</body>
+</html>

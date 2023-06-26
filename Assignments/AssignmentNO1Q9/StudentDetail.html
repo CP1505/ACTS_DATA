@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+
+    <style>
+        table {
+
+
+            background-color: palevioletred;
+            border-collapse: collapse;
+            width: 40%;
+            
+
+
+        }
+
+        td,
+        th {
+            border: 1px solid black;
+            padding: 15px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <form>
+
+    <table>
+        <tbody>
+            <tr>
+                <td>Name</td>
+                <td><input type="text" name="text" id="text"></td>
+            </tr>
+            <tr>
+                <td>Employee Code</td>
+                <td><input type="text" name="text" id="text"></td>
+            </tr>
+            <tr>
+
+                <td>Department</td>
+                <td>
+                    <input type="radio" name="Department" id="admin" value="admin">ADMIN <br>
+                    <input type="radio" name="Department" id="hr" value="hr">HR <br>
+                    <input type="radio" name="Department" id="technical" value="technical">Technical <br>
+                    <input type="radio" name="Department" id="accounts" value="accounts">ACCOUNTS
+                </td>
+
+
+
+            </tr>
+            <tr>
+                <td>Date Of Joining</td>
+               <td>
+                <div style="display:inline-table ;">
+                    <span style="display: inline-block;"> <input type="number" min="1" max="31" style="width: 30px;">/<br>dd</span>
+                    <span style="display: inline-block;"><input style="width: 20px; type="text">/<br>mm</span>
+                    <span style="display: inline-block;"><input style="width: 30px; type="text"><br>yyyy</span>
+                </div>
+               </td>
+
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td>
+                    <textarea cols="30" rows="5" name="address" id="address"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>Training Programs Attended</td>
+                <td>
+                    <input type="checkbox" name="html" id="html">HTML/DHTML <br>
+                    <input type="checkbox" name="java" id="java">JAVA <br>
+                    <input type="checkbox" name="cli" id="cli">CLIENT/SERVER <br>
+                    <input type="checkbox" name="net" id="net">.NET
+
+                </td>
+            </tr>
+            <tr>
+                <td>Traninig Programmes need to attend</td>
+                <td>
+
+                    <select name="java" id="java" size="2">
+                        <option>JAVASCRIPT</option>
+                        <option>JSTRUTS</option>
+                        <option>CSS</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Send the information at</td>
+                <td>
+                    <a href="empinfo@patni.com" target="_blank">empinfo@patni.com</a>
+                </td>
+            </tr>
+
+        </tbody>
+
+    </table>
+</form>                
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Radio</title>
+    <script src="./ProjectRadio.js"></script>
+</head>
+<body>
+    <form>
+        Number1 : <input type="text" name="num1" id="num1" placeholder="ENTER NUMBER" required autofocus><br> <br>
+        Number2 : <input type="text" name="num2" id="num2" placeholder="ENTER NUMBER" required><br> <br>
+        Result : <input type="text" name="result" id="result"  readonly> <br> <br>
+
+        <input type="radio" name="operation" id="add" value="add">
+        <label for="add">ADDITION</label> <br>
+        <input type="radio" name="operation" id="sub" value="sub">
+        <label for="sub">SUBTRACT</label> <br>
+        <input type="radio" name="operation" id="multi" value="multi">
+        <label for="sub">MULTIPLICATION</label> <br>
+        <input type="radio" name="operation" id="division" value="division">
+        <label for="sub">DIVISION</label> <br> <br>
+        <button type="button" id="btn" name="btn" value="btn" onclick="calculator()">CALCULATE</button>
+
+    </form>
+</body>
+</html>
